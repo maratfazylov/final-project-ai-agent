@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+*.ses
+.venv/
+.uv-cache/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+data/
+output/
+*.log
+*.pid
+*.egg-info/

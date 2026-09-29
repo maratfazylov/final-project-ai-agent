@@ -1,0 +1,13 @@
+services:
+  research-bot:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      SOFFICE_PATH: /usr/bin/soffice
+      DATA_DIR: /app/data
+      OUTPUT_DIR: /app/output
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+
